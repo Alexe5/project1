@@ -1,0 +1,41 @@
+.main-news
+	display: block
+	height: 300px
+	text-decoration: none
+
+	&__img
+		margin-top: 5px
+		background: url('../img/main-news__img.jpg') no-repeat
+		background-size: cover
+		width: 100%
+		height: 256px
+		position: relative
+		transition: 0.3s
+
+		img
+			max-width: 100%
+			height: auto
+
+		&:hover 
+			opacity: 0.8
+
+	&__text
+		@include main-font-size
+		color: #e2e2e2
+		line-height: 1.5em
+		padding: 19px 23px 21px 17px
+		background: #1e1e1e
+		width: 336px
+		position: absolute
+		bottom: 36px
+		left: 39px
+		text-align: justify
+		+r(733)
+			opacity: 0.9
+		+r(500)
+			font-size: 11px
+			line-height: 1.5em
+			padding: 25px 5px
+			width: calc(100% - 10px)
+			bottom: 5px
+			left: 5px

@@ -1,0 +1,64 @@
+*, ul, li
+	margin: 0
+	padding: 0
+	font-family: $mainFont
+	box-sizing: border-box
+
+.wrapper
+	max-width: 1000px
+	width: 100%
+	margin: 0 auto
+
+.wrapper_main
+	background: $bgColor
+	display: flex
+	+r(1000)
+		justify-content: space-evenly
+
+body
+	background: url('../img/bg.jpg') top center no-repeat #c8deeb
+	background-size: 100%
+
+.header-title-description
+	display: flex
+	height: 35px
+
+	&__title
+		text-transform: uppercase
+		background: $bgTitle
+		font-family: $bottonFont
+		font-weight: normal
+		padding: 4px 35px 9px 12px
+		color: $colorButton
+		font-size: 18px
+		position: relative
+		border-radius: 2px 0 0 2px
+		white-space: nowrap
+		+r(500)
+			padding: 10px 20px 9px 12px
+			font-size: 12px
+
+		&:after
+			content: ''
+			position: absolute
+			background: #ae0002
+			width: 25px
+			height: 25px
+			top: 5px
+			right: -12px
+			transform: rotate(47deg)
+			border-radius: 0 2px 0 0
+
+	&__description
+		background: $bgDescription
+		width: 100%
+		padding-left: 34px
+		@include main-font-size
+		line-height: 35px
+		color: #757575
+		border-radius: 0 2px 2px 0
+		+r(733)
+			padding-left: 20px
+			line-height: 17px
+		+r(600)
+			font-size: 0

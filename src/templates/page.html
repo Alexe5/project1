@@ -1,0 +1,41 @@
+---
+title: LAYMAN
+link1: privacy policy
+link2: advertise
+link3: terms and conditions
+link4: main street
+link5: washington dc
+link6: wall street
+link7: statewide
+link8: politics
+link9: just a bill
+link10: video
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{# partial header #}
+{% include "partials/_header.html" %}
+
+<div class="wrapper wrapper_main">
+	<main class="main">
+		
+		{# partial main-news #}
+		{% include "partials/_main-news.html" %}
+
+		{# partial news #}
+		{% include "partials/_news.html" %}
+
+		{# partial long-news #}
+		{% include "partials/_long-news.html" %}
+
+	</main>
+
+	{# partial aside #}
+	{% include "partials/_aside.html" %}
+
+</div>
+
+{% endblock %}

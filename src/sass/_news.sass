@@ -1,0 +1,89 @@
+.news
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr
+	grid-gap: 15px
+	margin-top: 11px
+	+r(733)
+		grid-template-columns: 1fr 1fr
+		grid-gap: 5px
+		margin-top: 0
+
+	&__item
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		background: #fff
+		text-decoration: none
+		border-radius: 2px
+		box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.15)
+		position: relative
+
+		&:nth-child(1) .news__img
+			background: url('../img/news__img1.jpg')
+			+r(733)
+				background-size: cover
+
+		&:nth-child(2) .news__img
+			background: url('../img/news__img2.jpg')
+			+r(733)
+				background-size: cover
+
+		&:nth-child(3) .news__img
+			background: url('../img/news__img3.jpg')
+			+r(733)
+				background-size: cover
+
+		&:nth-child(4) .news__img
+			background: url('../img/news__img4.jpg')
+			+r(733)
+				background-size: cover
+
+	&__img
+		width: 137px
+		height: 117px
+		transition: 0.3s
+		margin-top: 16px
+		+r(733)
+			width: calc(100% - 10px)
+			margin-top: 5px
+			height: 150px
+
+		&:hover
+			opacity: 0.8
+
+	&__title
+		@include main-font-size
+		color: #042b38
+		width: 133px
+		text-decoration: underline
+		margin-top: 14px
+		font-weight: 500
+		line-height: 18px
+		+r(733)
+			width: calc(100% - 10px)
+			margin-top: 5px
+
+	&__text
+		color: #757575
+		@include small-font-size
+		font-style: italic
+		width: 125px
+		line-height: 18px
+		margin: 7px 0 18px -8px
+		+r(733)
+			width: calc(100% - 10px)
+			margin: 5px 0 22px 0
+
+	&__comments
+		position: absolute
+		bottom: 8px
+		right: 12px
+		@include small-font-size
+		font-style: italic
+		color: #989898
+		background: url(../img/speech.png) no-repeat
+		text-align: right
+		padding-left: 23px
+		height: 13px
+		line-height: 8px

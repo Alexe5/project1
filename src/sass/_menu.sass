@@ -1,0 +1,29 @@
+.menu
+	list-style: none
+	padding-top: 8px
+	margin-left: 24px
+	+r(600)
+		display: none
+
+	&__item
+		text-transform: uppercase
+		margin-right: -7px
+		display: inline-block
+
+	&__link
+		display: block
+		color: #f6f6f6
+		text-decoration: none
+		font-size: 18px
+		font-family: $bottonFont
+		border-radius: 2px
+		padding: 5px 14px 6px 14px
+		border-right: solid 1px rgba(0,0,0,0)
+		border-bottom: solid 1px rgba(0,0,0,0)
+		transition: 0.3s
+
+		&:hover
+			background-color: #092f3b
+			border-right: solid 1px rgba(255,255,255,0.15)
+			border-bottom: solid 1px rgba(255,255,255,0.15)
+			box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.25)

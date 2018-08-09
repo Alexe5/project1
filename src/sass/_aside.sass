@@ -1,0 +1,87 @@
+.aside
+	display: inline-block
+	width: 187px
+	margin: 30px 0 0 27px
+	+r(1000)
+		margin: 30px 0 0 0
+	+r(925)
+		display: none
+
+	&__header
+		text-transform: uppercase
+		background: $bgTitle
+		font-family: $bottonFont
+		font-weight: normal
+		padding: 4px 0 9px 13px
+		color: $colorButton
+		font-size: 18px
+		border-radius: 2px
+		width: 187px
+
+	&__link
+		display: block
+		text-decoration: none
+
+	&__img
+		width: 187px
+		height: 172px
+		border-radius: 2px
+		position: relative
+		transition: 0.3s
+
+		&:hover
+			opacity: 0.8
+
+	&__img_1
+		background: url('../img/aside__img1.jpg') no-repeat
+		margin-top: 5px
+
+	&__img_2
+		background: url('../img/aside__img2.jpg') no-repeat
+		margin-top: 22px
+
+	&__img_3
+		background: url('../img/aside__img3.jpg') no-repeat
+		margin-top: 22px
+
+	&__icon
+		position: absolute
+		left: 8px
+		bottom: 9px
+		width: 35px
+		height: 35px
+		background: url(../img/triangle.png) no-repeat
+
+	&__title
+		font-family: Georgia,serif
+		@include main-font-size
+		color: #2e2e2e
+		text-decoration: underline
+		color: #042b38
+		margin: 16px 0 0 3px
+		font-weight: 500
+		line-height: 18px
+		width: 184px
+
+	&__text
+		color: #757575
+		@include small-font-size
+		font-style: italic
+		line-height: 1.5em
+		margin: 7px 0 0 3px
+		position: relative
+		line-height: 18px
+		width: 184px
+
+	&__comments
+		position: absolute
+		left: 57px
+		bottom: 2px
+		@include small-font-size
+		font-style: italic
+		color: #989898
+		background: url(../img/speech.png) no-repeat
+		text-align: right
+		height: 13px
+		line-height: 8px
+		padding-left: 23px
